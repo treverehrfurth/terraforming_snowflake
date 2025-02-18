@@ -18,9 +18,14 @@ variable "snowflake_role" {
   default     = "SYSADMIN"
 }
 
-variable "snowflake_private_key_path" {
+variable "snowflake_private_key" {
   description = "Path to the private key for authentication"
   type        = string
+}
+
+variable "snowflake_authenticator" {
+    description = "Authenticator type"
+    type        = string
 }
 
 variable "snowflake_region" {
