@@ -28,3 +28,18 @@ variable "snowflake_region" {
   type        = string
   default     = "us-east-1"
 }
+
+variable "warehouse_name" {
+    description = "Warehouse name"
+    type = string
+}
+
+variable "warehouse_size" {
+    description = "Warehouse size"
+    type = string
+}
+
+variable "db_name" {
+    description = "Database name"
+    type = string
+}

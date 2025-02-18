@@ -15,11 +15,11 @@ provider "snowflake" {
 }
 
 resource "snowflake_database" "db" {
-    name = "TREVER_TERRAFORM"
+    name = var.db_name
 }
 
 resource "snowflake_warehouse" "warehouse" {
-    name           = "TF_WH"
-    warehouse_size = "xsmall"
+    name           = var.warehouse_name
+    warehouse_size = var.warehouse_size
     auto_suspend   = 60
 }
